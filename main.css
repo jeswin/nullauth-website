@@ -1,0 +1,105 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5em;
+  font-family: Merriweather,Georgia,serif;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  font-family: Raleway,"Open Sans",Arial,sans-serif;
+  line-height: 1.4em;
+}
+
+ol, ul {
+  padding: 0 0 0 1em;
+  margin: 1em 0;
+}
+
+ol > li, ul > li {
+  list-style: disc
+}
+
+pre {
+  font-size: 14px
+}
+
+a {
+  text-decoration: none;
+  color: rgb(32, 145, 206);
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+h3 {
+  font-weight: 100;
+}
+
+#layout {
+  padding: 0;
+}
+
+.header {
+  text-align: center;
+  top: auto;
+  margin: 3em auto;
+}
+
+.sidebar {
+  background-color: #2053AB;
+  color: rgb(255, 255, 255);
+  font-family: Raleway,"Open Sans",Arial,sans-serif
+}
+
+.sidebar a {
+  color: rgb(200, 234, 255);
+}
+
+.sidebar ol, .sidebar ul {
+  margin: 0; padding: 0;
+}
+
+
+.sidebar ol > li, .sidebar ul > li {
+  list-style: none
+}
+
+.content {
+  padding: 2em 1em 0;
+}
+
+.footer {
+  padding: 1em 0;
+}
+
+@media (min-width: 48em) {
+  .content {
+      padding: 2em 3em 0;
+      margin-left: 25%;
+      max-width: 72em;
+  }
+
+  .content ul, .content ol, .content p {
+    max-width: 48em;
+  }
+
+  .header {
+      margin: 20% 2em 0;
+      text-align: center;
+  }
+
+  .sidebar {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+  }
+
+  .footer {
+      text-align: center;
+  }
+}
